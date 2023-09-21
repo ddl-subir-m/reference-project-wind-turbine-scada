@@ -43,8 +43,8 @@ def train():
     print("Accuracy on test : {:.0%}".format(model.score(X_test,y_test)))
 
     print("Persisting model...")
-    
-    with open("model.bin", 'wb') as f_out:
+    # Please change the location below accordingly and don't forget to sync your files to Domino 
+    with open("/mnt/artifacts/model.bin", 'wb') as f_out:
         pickle.dump(model, f_out)
         f_out.close()
 
