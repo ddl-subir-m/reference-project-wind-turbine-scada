@@ -1,6 +1,6 @@
 import pickle
     
-with open("/mnt/code/model.bin", "rb") as f_in:
+with open("/mnt/artifacts/model.bin", "rb") as f_in:
     loaded_model = pickle.load(f_in)
     f_in.close()
     
