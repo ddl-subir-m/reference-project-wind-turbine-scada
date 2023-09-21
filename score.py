@@ -1,5 +1,6 @@
 import pickle
-    
+
+# change this location to where you saved your model binary
 with open("/mnt/artifacts/model.bin", "rb") as f_in:
     loaded_model = pickle.load(f_in)
     f_in.close()
